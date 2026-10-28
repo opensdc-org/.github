@@ -19,13 +19,23 @@ Scientific simulations, large instruments, and AI models now produce data far fa
 
 ### Projects
 
+#### General-purpose compressors
+
 | Project | Description | Publication |
 |---|---|---|
 | [**Falcons**](https://github.com/opensdc-org/Falcons) | Error-bounded lossy compressor optimized for parallel scientific applications on x86, ARM, and accelerator platforms | PPoPP '27 |
-| [**PRISM**](https://github.com/opensdc-org/PRISM) | GPU-based progressive lossy compression for on-demand, precision-aware data retrieval | PPoPP '26 (Best Paper Nominee) |
-| [**MANS**](https://github.com/opensdc-org/MANS) | Efficient and portable ANS entropy coding for multi-byte integer data on CPUs and GPUs | SC '25 |
 | [**CAIEC**](https://github.com/opensdc-org/CAIEC) | Learning-based compression with co-optimized model inference and entropy coding | Coming soon |
-| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | Compression software package for light source (synchrotron) data | NPC '26 |
+| [**PRISM**](https://github.com/opensdc-org/PRISM) | GPU-based progressive lossy compression for on-demand, precision-aware data retrieval | [PPoPP '26](https://doi.org/10.1145/3774934.3786438) (Best Paper Nominee) |
+| [**MANS**](https://github.com/opensdc-org/MANS) | Efficient and portable ANS entropy coding for multi-byte integer data on CPUs and GPUs | [SC '25](https://doi.org/10.1145/3712285.3759825) |
+
+#### Domain-specific compressors
+
+| Project | Domain | Description | Publication |
+|---|---|---|---|
+| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | Light sources | Compression software package for light source (synchrotron) data | NPC '26 |
+| [**SolarZip**](https://github.com/opensdc-org/SolarZip) | Solar physics | Efficient and adaptive compression framework for solar EUV imaging data | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
+
+Contributions of both **general-purpose** compressors and **domain-specific** compressors (e.g., climate, cosmology, microscopy, genomics) are welcome.
 
 ### Principles
 
@@ -50,13 +60,23 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 ### 项目
 
+#### 通用压缩器
+
 | 项目 | 简介 | 发表 |
 |---|---|---|
 | [**Falcons**](https://github.com/opensdc-org/Falcons) | 面向并行科学应用的误差可控有损压缩器，针对 x86、ARM 及加速器平台深度优化 | PPoPP '27 |
-| [**PRISM**](https://github.com/opensdc-org/PRISM) | 基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据 | PPoPP '26（最佳论文提名） |
-| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整型数据的高效可移植 ANS 熵编码，支持 CPU 与 GPU | SC '25 |
 | [**CAIEC**](https://github.com/opensdc-org/CAIEC) | 模型推理与熵编码协同优化的学习型压缩 | 即将发表 |
-| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | 面向光源数据的压缩软件包 | NPC '26 |
+| [**PRISM**](https://github.com/opensdc-org/PRISM) | 基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据 | [PPoPP '26](https://doi.org/10.1145/3774934.3786438)（最佳论文提名） |
+| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整型数据的高效可移植 ANS 熵编码，支持 CPU 与 GPU | [SC '25](https://doi.org/10.1145/3712285.3759825) |
+
+#### 领域专用压缩器
+
+| 项目 | 领域 | 简介 | 发表 |
+|---|---|---|---|
+| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | 光源 | 面向光源数据的压缩软件包 | NPC '26 |
+| [**SolarZip**](https://github.com/opensdc-org/SolarZip) | 太阳物理 | 面向太阳极紫外（EUV）成像数据的高效自适应压缩框架 | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
+
+欢迎贡献**通用压缩器**，也欢迎贡献面向气象气候、宇宙学、显微成像、基因组等领域的**专用压缩器**。
 
 ### 社区原则
 
@@ -69,4 +89,4 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 - 阅读[贡献指南](https://github.com/opensdc-org/.github/blob/main/CONTRIBUTING.md)。
 - 在任意项目仓库提交 Issue 或 Pull Request。
-- 联系方式：taodingwen@ict.ac.cn, jinyang.liu@sjtu.edu.cn
+- 联系方式：taodingwen@ict.ac.cn、jinyang.liu@sjtu.edu.cn
