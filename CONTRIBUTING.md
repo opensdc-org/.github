@@ -47,11 +47,11 @@ All contributions are released under the **BSD 3-Clause License**. By submitting
 
 ## 6. Code of Conduct / 行为准则
 
-We are committed to a welcoming and respectful community for everyone, regardless of nationality, institution, or background. Please be constructive and professional in all interactions. Report concerns to taodingwen@ict.ac.cn.
+We are committed to a welcoming and respectful community for everyone, regardless of nationality, institution, or background. Please be constructive and professional in all interactions. Report concerns to taodingwen@ict.ac.cn or jinyang.liu@sjtu.edu.cn.
 
-我们致力于建设一个开放、相互尊重的社区，不论国籍、单位或背景。请在所有交流中保持建设性和专业性。如有问题请联系 taodingwen@ict.ac.cn。
+我们致力于建设一个开放、相互尊重的社区，不论国籍、单位或背景。请在所有交流中保持建设性和专业性。如有问题请联系 taodingwen@ict.ac.cn 或 jinyang.liu@sjtu.edu.cn。
 
 ## 7. Contact / 联系方式
 
 - Issues and discussions: in the relevant repository / 在对应仓库提 Issue 或 Discussion
-- Email / 邮箱: taodingwen@ict.ac.cn
+- Email / 邮箱: taodingwen@ict.ac.cn, jinyang.liu@sjtu.edu.cn
