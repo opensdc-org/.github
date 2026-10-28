@@ -21,14 +21,15 @@ Scientific simulations, large instruments, and AI models now produce data far fa
 
 | Project | Description | Publication |
 |---|---|---|
-| [**SZo**](https://github.com/opensdc-org/szo) | Error-bounded lossy compressor optimized for parallel scientific applications on x86, ARM, and accelerator platforms | PPoPP '27 |
-| [**PRISM**](https://github.com/opensdc-org/prism) | GPU-based progressive lossy compression for on-demand, precision-aware data retrieval | PPoPP '26 (Best Paper Nominee) |
-| [**MANS**](https://github.com/opensdc-org/mans) | Efficient and portable ANS entropy coding for multi-byte integer data on CPUs and GPUs | SC '25 |
-| **CAIEC** | Learning-based compression with co-optimized model inference and entropy coding | Coming soon |
+| [**SZo**](https://github.com/opensdc-org/SZo) | Error-bounded lossy compressor optimized for parallel scientific applications on x86, ARM, and accelerator platforms | PPoPP '27 |
+| [**PRISM**](https://github.com/opensdc-org/PRISM) | GPU-based progressive lossy compression for on-demand, precision-aware data retrieval | PPoPP '26 (Best Paper Nominee) |
+| [**MANS**](https://github.com/opensdc-org/MANS) | Efficient and portable ANS entropy coding for multi-byte integer data on CPUs and GPUs | SC '25 |
+| [**CAIEC**](https://github.com/opensdc-org/CAIEC) | Learning-based compression with co-optimized model inference and entropy coding | Coming soon |
+| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | Compression software package for light source (synchrotron) data | NPC '26 |
 
 ### Principles
 
-- **Open** – BSD-3-Clause licensed; anyone can use, modify, and contribute.
+- **Open** – Permissive open-source licenses (BSD-3-Clause / MIT); anyone can use, modify, and contribute.
 - **Portable** – Designed to run efficiently on diverse hardware, not tied to a single vendor.
 - **Reproducible** – Every claim backed by public benchmarks and scripts.
 - **Community-driven** – Transparent review: every pull request receives a timely, reasoned response.
@@ -51,14 +52,15 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 | 项目 | 简介 | 发表 |
 |---|---|---|
-| [**SZo**](https://github.com/opensdc-org/szo) | 面向并行科学应用的误差可控有损压缩器，针对 x86、ARM 及加速器平台深度优化 | PPoPP '27 |
-| [**PRISM**](https://github.com/opensdc-org/prism) | 基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据 | PPoPP '26（最佳论文提名） |
-| [**MANS**](https://github.com/opensdc-org/mans) | 面向多字节整型数据的高效可移植 ANS 熵编码，支持 CPU 与 GPU | SC '25 |
-| **CAIEC** | 模型推理与熵编码协同优化的学习型压缩 | 即将开源 |
+| [**SZo**](https://github.com/opensdc-org/SZo) | 面向并行科学应用的误差可控有损压缩器，针对 x86、ARM 及加速器平台深度优化 | PPoPP '27 |
+| [**PRISM**](https://github.com/opensdc-org/PRISM) | 基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据 | PPoPP '26（最佳论文提名） |
+| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整型数据的高效可移植 ANS 熵编码，支持 CPU 与 GPU | SC '25 |
+| [**CAIEC**](https://github.com/opensdc-org/CAIEC) | 模型推理与熵编码协同优化的学习型压缩 | 即将发表 |
+| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | 面向光源数据的压缩软件包 | NPC '26 |
 
 ### 社区原则
 
-- **开放**：采用 BSD-3-Clause 许可证，任何人均可使用、修改和贡献。
+- **开放**：采用 BSD-3-Clause / MIT 等宽松开源许可证，任何人均可使用、修改和贡献。
 - **可移植**：面向多样化硬件高效运行，不绑定单一厂商。
 - **可复现**：所有性能结论均有公开基准与脚本支撑。
 - **社区驱动**：评审公开透明，每个 PR 都会得到及时、有理由的回复。
