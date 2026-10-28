@@ -38,7 +38,7 @@ Scientific simulations, large instruments, and AI models now produce data far fa
 
 - Read our [Contributing Guide](https://github.com/opensdc-org/.github/blob/main/CONTRIBUTING.md).
 - Open an issue or pull request in any project repository.
-- Contact: taodingwen@ict.ac.cn
+- Contact: taodingwen@ict.ac.cn, jinyang.liu@sjtu.edu.cn
 
 ---
 
@@ -69,4 +69,4 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 - 阅读[贡献指南](https://github.com/opensdc-org/.github/blob/main/CONTRIBUTING.md)。
 - 在任意项目仓库提交 Issue 或 Pull Request。
-- 联系方式：taodingwen@ict.ac.cn
+- 联系方式：taodingwen@ict.ac.cn, jinyang.liu@sjtu.edu.cn
