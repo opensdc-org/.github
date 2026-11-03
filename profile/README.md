@@ -5,6 +5,8 @@
 **Open Scientific Data Compression**
 **开放科学数据压缩社区**
 
+[**Website**](https://opensdc-org.github.io/)
+
 [English](#english) · [中文](#中文)
 
 </div>
