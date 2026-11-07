@@ -34,7 +34,7 @@ Scientific simulations, large instruments, and AI models now produce data far fa
 
 | Project | Domain | Description | Publication |
 |---|---|---|---|
-| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | Light sources | Compression software package for light source (synchrotron) data | NPC '26 |
+| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | Light sources | Compression software package for light source (synchrotron) data | NPC '26 ([arXiv](https://arxiv.org/abs/2611.04138)) |
 | [**SolarZip**](https://github.com/opensdc-org/SolarZip) | Solar physics | Efficient and adaptive compression framework for solar EUV imaging data | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
 
 Contributions of both **general-purpose** compressors and **domain-specific** compressors (e.g., climate, cosmology, microscopy, genomics) are welcome.
@@ -75,7 +75,7 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 | 项目 | 领域 | 简介 | 发表 |
 |---|---|---|---|
-| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | 光源 | 面向光源数据的压缩软件包 | NPC '26 |
+| [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | 光源 | 面向光源数据的压缩软件包 | NPC '26（[arXiv](https://arxiv.org/abs/2611.04138)） |
 | [**SolarZip**](https://github.com/opensdc-org/SolarZip) | 太阳物理 | 面向太阳极紫外（EUV）成像数据的高效自适应压缩框架 | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
 
 欢迎贡献**通用压缩器**，也欢迎贡献面向气象气候、宇宙学、显微成像、基因组等领域的**专用压缩器**。
