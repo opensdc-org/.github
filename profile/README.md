@@ -5,7 +5,7 @@
 **Open Scientific Data Compression**
 **开放科学数据压缩社区**
 
-[**Website**](https://opensdc-org.github.io/)
+[**Website**](https://opensdc-org.github.io/) · [**Benchmark & Leaderboard / 评测与榜单**](https://opensdc-org.github.io/benchmark/) · [**Benchmark Code / 评测代码**](https://github.com/opensdc-org/OpenSDC-Bench)
 
 [English](#english) · [中文](#中文)
 
@@ -19,7 +19,13 @@ OpenSDC is an open community for **high-performance scientific data compression*
 
 Scientific simulations, large instruments, and AI models now produce data far faster than storage, I/O, and networks can absorb. OpenSDC aims to make compression a dependable building block of scientific data management: **high ratio, high throughput, strict error control, and portable across platforms.**
 
-### Projects
+### OpenSDC-Bench: open, fair, reproducible benchmarking
+
+Alongside compression software, OpenSDC provides **[OpenSDC-Bench](https://github.com/opensdc-org/OpenSDC-Bench)**: an open-source scientific data compression benchmarking system bringing together evaluation code, scientific datasets, comprehensive metrics, and regularly updated leaderboards. Compare compression ratio, speed, and scientific fidelity across datasets and error bounds under a shared, transparent protocol—helping users choose suitable compressors and developers improve their methods.
+
+**[Explore the leaderboard](https://opensdc-org.github.io/benchmark/)** · [Evaluation code](https://github.com/opensdc-org/OpenSDC-Bench) · [Datasets](https://github.com/opensdc-org/OpenSDC-Bench/tree/main/datasets) · [Contribute a method, metric, or result](https://github.com/opensdc-org/OpenSDC-Bench/blob/main/CONTRIBUTING.md)
+
+### Compression software
 
 #### General-purpose compressors
 
@@ -60,7 +66,13 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 科学模拟、大科学装置和 AI 模型产生数据的速度，已远超存储、I/O 与网络的承载能力。OpenSDC 希望让压缩成为科学数据管理中可靠的基础组件：**高压缩比、高吞吐、严格误差控制、跨平台可移植。**
 
-### 项目
+### OpenSDC-Bench：开放、公平、可复现的评测系统
+
+除压缩软件外，OpenSDC 还提供 **[OpenSDC-Bench](https://github.com/opensdc-org/OpenSDC-Bench)**，集成开源评测代码、科学数据集、多维评测指标和持续更新的榜单。在统一、透明的协议下，比较不同压缩方法在不同数据集与误差界上的压缩率、速度和科学数据保真度，帮助用户选择适合自身数据的压缩软件，帮助开发者理解性能差异并优化方法。
+
+**[查看评测与榜单](https://opensdc-org.github.io/benchmark/)** · [评测代码](https://github.com/opensdc-org/OpenSDC-Bench) · [数据集](https://github.com/opensdc-org/OpenSDC-Bench/tree/main/datasets) · [贡献方法、指标或结果](https://github.com/opensdc-org/OpenSDC-Bench/blob/main/CONTRIBUTING.md)
+
+### 压缩软件
 
 #### 通用压缩器
 
