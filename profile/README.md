@@ -43,6 +43,7 @@ Alongside compression software, OpenSDC provides **[OpenSDC-Bench](https://githu
 |---|---|---|---|
 | [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | Light sources | Compression software package for light source (synchrotron) data | NPC '26 ([arXiv](https://arxiv.org/abs/2611.04138)) |
 | [**SolarZip**](https://github.com/opensdc-org/SolarZip) | Solar physics | Efficient and adaptive compression framework for solar EUV imaging data | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
+| [**APZ**](https://github.com/opensdc-org/APZ) | Particle data | Error-bounded compression of particle positions and velocities in cosmological simulations, with HACC as an example. Future work will extend support to particle data from molecular dynamics simulations. | — |
 
 Contributions of both **general-purpose** compressors and **domain-specific** compressors (e.g., climate, cosmology, microscopy, genomics) are welcome.
 
@@ -91,6 +92,7 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 |---|---|---|---|
 | [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | 光源 | 面向光源数据的压缩软件包 | NPC '26（[arXiv](https://arxiv.org/abs/2611.04138)） |
 | [**SolarZip**](https://github.com/opensdc-org/SolarZip) | 太阳物理 | 面向太阳极紫外（EUV）成像数据的高效自适应压缩框架 | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
+| [**APZ**](https://github.com/opensdc-org/APZ) | 粒子数据 | 目前面向宇宙学模拟，提供粒子位置和速度的误差可控压缩，以 HACC 为例。后续计划扩展到分子动力学模拟的粒子数据。 | — |
 
 欢迎贡献**通用压缩器**，也欢迎贡献面向气象气候、宇宙学、显微成像、基因组等领域的**专用压缩器**。
 
