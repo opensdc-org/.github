@@ -29,12 +29,15 @@ Alongside compression software, OpenSDC provides **[OpenSDC-Bench](https://githu
 
 #### General-purpose compressors
 
+**Compression on Hygon DCUs and AMD GPUs.** See [hipSZ's Hygon K100 example](https://github.com/opensdc-org/hipSZ#using-hipsz-prepared-executable-binary) and [MANS's AMD MI210 benchmarks](https://github.com/opensdc-org/MANS#amd-mi210-gpu).
+
 | Project | Description | Publication |
 |---|---|---|
 | [**Falcons**](https://github.com/opensdc-org/Falcons) | Error-bounded lossy compressor optimized for parallel scientific applications on x86, ARM, and accelerator platforms | PPoPP '27 ([arXiv](https://arxiv.org/abs/2610.41209)) |
 | [**CAIEC**](https://github.com/opensdc-org/CAIEC) | Learning-based compression with co-optimized model inference and entropy coding | Coming soon |
 | [**PRISM**](https://github.com/opensdc-org/PRISM) | GPU-based progressive lossy compression for on-demand, precision-aware data retrieval | [PPoPP '26](https://doi.org/10.1145/3774934.3786438) (Best Paper Nominee) |
-| [**MANS**](https://github.com/opensdc-org/MANS) | Efficient and portable ANS entropy coding for multi-byte integer data on CPUs and GPUs | [SC '25](https://doi.org/10.1145/3712285.3759825) |
+| [**hipSZ**](https://github.com/opensdc-org/hipSZ) | HIP implementation of cuSZp for error-bounded lossy compression of scientific data on Hygon DCUs (DTK) and AMD GPUs (ROCm) | — |
+| [**MANS**](https://github.com/opensdc-org/MANS) | Lossless ANS entropy coding for multi-byte integers on CPUs and NVIDIA GPUs, with an optimized AMD ROCm backend and a standalone Hygon DCU build | [SC '25](https://doi.org/10.1145/3712285.3759825) |
 | [**ClustraComp**](https://github.com/opensdc-org/ClustraComp) | Storage framework for grouping similar file chunks before lossless compression with LZ4 or Zstandard | NPC '26 |
 
 #### Domain-specific compressors
@@ -78,12 +81,15 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 #### 通用压缩器
 
+**国产海光 DCU 与 AMD GPU 上的压缩。** 参见 [hipSZ 的海光 K100 实测示例](https://github.com/opensdc-org/hipSZ#using-hipsz-prepared-executable-binary)和 [MANS 的 AMD MI210 评测](https://github.com/opensdc-org/MANS#amd-mi210-gpu)。
+
 | 项目 | 简介 | 发表 |
 |---|---|---|
 | [**Falcons**](https://github.com/opensdc-org/Falcons) | 面向并行科学应用的误差可控有损压缩器，针对 x86、ARM 及加速器平台深度优化 | PPoPP '27（[arXiv](https://arxiv.org/abs/2610.41209)） |
 | [**CAIEC**](https://github.com/opensdc-org/CAIEC) | 模型推理与熵编码协同优化的学习型压缩 | 即将发表 |
 | [**PRISM**](https://github.com/opensdc-org/PRISM) | 基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据 | [PPoPP '26](https://doi.org/10.1145/3774934.3786438)（最佳论文提名） |
-| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整型数据的高效可移植 ANS 熵编码，支持 CPU 与 GPU | [SC '25](https://doi.org/10.1145/3712285.3759825) |
+| [**hipSZ**](https://github.com/opensdc-org/hipSZ) | 基于 cuSZp 的 HIP 实现，支持在海光 DCU（DTK）和 AMD GPU（ROCm）上对科学数据进行误差可控有损压缩 | — |
+| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整数的无损 ANS 熵编码，支持 CPU 和 NVIDIA GPU，并提供针对 AMD GPU 的 ROCm 优化及独立的海光 DCU 构建 | [SC '25](https://doi.org/10.1145/3712285.3759825) |
 | [**ClustraComp**](https://github.com/opensdc-org/ClustraComp) | 基于相似文件块分组的无损压缩存储框架，支持 LZ4 和 Zstandard | NPC '26 |
 
 #### 领域专用压缩器
