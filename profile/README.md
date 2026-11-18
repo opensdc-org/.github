@@ -29,15 +29,12 @@ Alongside compression software, OpenSDC provides **[OpenSDC-Bench](https://githu
 
 #### General-purpose compressors
 
-**Compression on Hygon DCUs and AMD GPUs.** See [hipSZ's Hygon K100 example](https://github.com/opensdc-org/hipSZ#using-hipsz-prepared-executable-binary) and [MANS's AMD MI210 benchmarks](https://github.com/opensdc-org/MANS#amd-mi210-gpu).
-
 | Project | Description | Publication |
 |---|---|---|
 | [**Falcons**](https://github.com/opensdc-org/Falcons) | Error-bounded lossy compressor optimized for parallel scientific applications on x86, ARM, and accelerator platforms | PPoPP '27 ([arXiv](https://arxiv.org/abs/2610.41209)) |
 | [**CAIEC**](https://github.com/opensdc-org/CAIEC) | Learning-based compression with co-optimized model inference and entropy coding | Coming soon |
 | [**PRISM**](https://github.com/opensdc-org/PRISM) | GPU-based progressive lossy compression for on-demand, precision-aware data retrieval | [PPoPP '26](https://doi.org/10.1145/3774934.3786438) (Best Paper Nominee) |
-| [**hipSZ**](https://github.com/opensdc-org/hipSZ) | HIP implementation of cuSZp for error-bounded lossy compression of scientific data on Hygon DCUs (DTK) and AMD GPUs (ROCm) | — |
-| [**MANS**](https://github.com/opensdc-org/MANS) | Lossless ANS entropy coding for multi-byte integers on CPUs and NVIDIA GPUs, with an optimized AMD ROCm backend and a standalone Hygon DCU build | [SC '25](https://doi.org/10.1145/3712285.3759825) |
+| [**MANS**](https://github.com/opensdc-org/MANS) | Lossless ANS entropy coding for multi-byte integers on CPUs and accelerators | [SC '25](https://doi.org/10.1145/3712285.3759825) |
 | [**ClustraComp**](https://github.com/opensdc-org/ClustraComp) | Storage framework for grouping similar file chunks before lossless compression with LZ4 or Zstandard | NPC '26 |
 
 #### Domain-specific compressors
@@ -47,6 +44,16 @@ Alongside compression software, OpenSDC provides **[OpenSDC-Bench](https://githu
 | [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | Light sources | Compression software package for light source (synchrotron) data | NPC '26 ([arXiv](https://arxiv.org/abs/2611.04138)) |
 | [**SolarZip**](https://github.com/opensdc-org/SolarZip) | Solar physics | Efficient and adaptive compression framework for solar EUV imaging data | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
 | [**APZ**](https://github.com/opensdc-org/APZ) | Particle data | Error-bounded compression of particle positions and velocities in cosmological simulations, with HACC as an example. Future work will extend support to particle data from molecular dynamics simulations. | — |
+
+#### Accelerator-optimized compression
+
+These implementations target Hygon DCUs and AMD GPUs and lay the groundwork for a compression software stack optimized for Hygon DCUs.
+
+| Project | Compression | Hardware and toolkit | Builds and benchmarks |
+|---|---|---|---|
+| [**hipSZ**](https://github.com/opensdc-org/hipSZ) | cuSZp-based error-bounded lossy compression for FP32 and FP64 | Hygon DCU (DTK) and AMD GPU (ROCm) | [BW150 measurements](https://github.com/opensdc-org/hipSZ#hygon-bw150-example) |
+| [**hipPFPL**](https://github.com/opensdc-org/hipPFPL) | HIP port of PFPL for error-bounded FP32 and FP64 compression | Hygon BW150 DCU (DTK, gfx936) | [DTK build](https://github.com/opensdc-org/hipPFPL#build) · [Tests](https://github.com/opensdc-org/hipPFPL#tests) |
+| [**MANS**](https://github.com/opensdc-org/MANS) | Lossless ANS compression for multi-byte integers | [Hygon DCU backend source](https://github.com/opensdc-org/MANS/tree/main/dcu) (standalone DTK build) · [AMD GPU backend source](https://github.com/opensdc-org/MANS/tree/main/amd) (ROCm, CPU + AMD build) | [DCU build](https://github.com/opensdc-org/MANS#dcu-dtkhip-build) · [AMD MI210 benchmarks](https://github.com/opensdc-org/MANS#amd-mi210-gpu) |
 
 Contributions of both **general-purpose** compressors and **domain-specific** compressors (e.g., climate, cosmology, microscopy, genomics) are welcome.
 
@@ -81,15 +88,12 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 
 #### 通用压缩器
 
-**国产海光 DCU 与 AMD GPU 上的压缩。** 参见 [hipSZ 的海光 K100 实测示例](https://github.com/opensdc-org/hipSZ#using-hipsz-prepared-executable-binary)和 [MANS 的 AMD MI210 评测](https://github.com/opensdc-org/MANS#amd-mi210-gpu)。
-
 | 项目 | 简介 | 发表 |
 |---|---|---|
 | [**Falcons**](https://github.com/opensdc-org/Falcons) | 面向并行科学应用的误差可控有损压缩器，针对 x86、ARM 及加速器平台深度优化 | PPoPP '27（[arXiv](https://arxiv.org/abs/2610.41209)） |
 | [**CAIEC**](https://github.com/opensdc-org/CAIEC) | 模型推理与熵编码协同优化的学习型压缩 | 即将发表 |
 | [**PRISM**](https://github.com/opensdc-org/PRISM) | 基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据 | [PPoPP '26](https://doi.org/10.1145/3774934.3786438)（最佳论文提名） |
-| [**hipSZ**](https://github.com/opensdc-org/hipSZ) | 基于 cuSZp 的 HIP 实现，支持在海光 DCU（DTK）和 AMD GPU（ROCm）上对科学数据进行误差可控有损压缩 | — |
-| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整数的无损 ANS 熵编码，支持 CPU 和 NVIDIA GPU，并提供针对 AMD GPU 的 ROCm 优化及独立的海光 DCU 构建 | [SC '25](https://doi.org/10.1145/3712285.3759825) |
+| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整数的无损 ANS 熵编码，支持 CPU 和加速器 | [SC '25](https://doi.org/10.1145/3712285.3759825) |
 | [**ClustraComp**](https://github.com/opensdc-org/ClustraComp) | 基于相似文件块分组的无损压缩存储框架，支持 LZ4 和 Zstandard | NPC '26 |
 
 #### 领域专用压缩器
@@ -99,6 +103,16 @@ OpenSDC 是一个面向**高性能科学数据压缩**的开放社区，致力�
 | [**PhotonZip**](https://github.com/opensdc-org/PhotonZip) | 光源 | 面向光源数据的压缩软件包 | NPC '26（[arXiv](https://arxiv.org/abs/2611.04138)） |
 | [**SolarZip**](https://github.com/opensdc-org/SolarZip) | 太阳物理 | 面向太阳极紫外（EUV）成像数据的高效自适应压缩框架 | [A&A '25](https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html) |
 | [**APZ**](https://github.com/opensdc-org/APZ) | 粒子数据 | 目前面向宇宙学模拟，提供粒子位置和速度的误差可控压缩，以 HACC 为例。后续计划扩展到分子动力学模拟的粒子数据。 | — |
+
+#### 异构加速器优化
+
+这些实现覆盖海光 DCU 和 AMD GPU，为建设面向海光 DCU 优化的压缩软件栈打基础。
+
+| 项目 | 压缩能力 | 硬件与工具链 | 构建与实测 |
+|---|---|---|---|
+| [**hipSZ**](https://github.com/opensdc-org/hipSZ) | 基于 cuSZp 的 FP32、FP64 误差可控有损压缩 | 海光 DCU（DTK）、AMD GPU（ROCm） | [BW150 实测](https://github.com/opensdc-org/hipSZ#hygon-bw150-example) |
+| [**hipPFPL**](https://github.com/opensdc-org/hipPFPL) | PFPL 的 HIP 移植，实现 FP32、FP64 误差可控有损压缩 | 海光 BW150 DCU（DTK、gfx936） | [DTK 构建](https://github.com/opensdc-org/hipPFPL#build) · [测试](https://github.com/opensdc-org/hipPFPL#tests) |
+| [**MANS**](https://github.com/opensdc-org/MANS) | 面向多字节整数的无损 ANS 压缩 | [海光 DCU 后端源码](https://github.com/opensdc-org/MANS/tree/main/dcu)（独立 DTK 构建） · [AMD GPU 后端源码](https://github.com/opensdc-org/MANS/tree/main/amd)（ROCm，CPU + AMD 构建） | [DCU 构建](https://github.com/opensdc-org/MANS#dcu-dtkhip-build) · [AMD MI210 评测](https://github.com/opensdc-org/MANS#amd-mi210-gpu) |
 
 欢迎贡献**通用压缩器**，也欢迎贡献面向气象气候、宇宙学、显微成像、基因组等领域的**专用压缩器**。
 
